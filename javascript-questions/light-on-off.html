@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 50px;
+}
+button {
+    padding: 20px;
+    margin: 10px;
+    font-size: larger;
+}
+
+img#bulb {
+    width: 200px;
+}
+
+</style>
+<body>
+    <h1>💡Light On/Off App</h1>
+    <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Bulb">
+    <br>
+    <button onclick="togglelight()"> Switch on/off</button>
+<script>
+    let x = false;
+
+    function togglelight(){
+        let bulb = document.getElementById("bulb");
+
+        if(x){
+            bulb.src = "https://www.w3schools.com/js/pic_bulboff.gif"; // off bulb image
+            x = false
+
+        }else {
+        bulb.src = "https://www.w3schools.com/js/pic_bulbon.gif"; // on bulb image
+        x=true
+
+    }
+}
+
+</script>
+
+    
+</body>
+</html>
